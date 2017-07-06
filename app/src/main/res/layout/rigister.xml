@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/nameEdittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailEdititext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nameEdittext"
+        android:layout_alignStart="@+id/nameEdittext"
+        android:layout_below="@+id/nameEdittext"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="e-mail adderess"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/phnoEdititext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/emailEdititext"
+        android:layout_alignStart="@+id/emailEdititext"
+        android:layout_below="@+id/emailEdititext"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Mobile number"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phnoEdititext"
+        android:layout_alignStart="@+id/phnoEdititext"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordEdit"
+        android:layout_alignStart="@+id/passwordEdit"
+        android:layout_below="@+id/passwordEdit"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:hint="Confirm password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/registeruserbuttton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="registerUser"
+        android:text="Register"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+</RelativeLayout>
